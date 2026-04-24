@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dra. Bruna Ghetti – Ginecologista especialista em menopausa, saúde íntima e longevidade feminina em Cuiabá-MT. Plano Safira: tratamento integral e personalizado.">
+  <title>Dra. Bruna Ghetti – Plano Safira Menopausa | Cuiabá-MT</title>
+
+  <!-- Preconnect fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap"></noscript>
+
+  <!-- Preload hero image (LCP) -->
+  <link rel="preload" as="image" href="images/hero.webp" fetchpriority="high">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dra. Bruna Ghetti – Saúde Feminina & Menopausa">
+  <meta property="og:description" content="Tratamento integral e personalizado para mulheres acima dos 40. Plano Safira – Cuiabá-MT.">
+  <meta property="og:image" content="images/hero.webp">
+  <meta property="og:type" content="website">
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<header>
+  <nav aria-label="Navegação principal">
+    <a href="/" class="nav-logo" aria-label="Dra. Bruna Ghetti – Página inicial">Dra. Bruna Ghetti</a>
+    <ul class="nav-links" role="list">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#plano">Plano Safira</a></li>
+      <li><a href="#depoimentos">Resultados</a></li>
+      <li><a href="#localizacao">Localização</a></li>
+      <li><a href="https://api.whatsapp.com/send?phone=556599989332&text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20Safira" target="_blank" rel="noopener noreferrer" class="btn-nav">Agendar consulta</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ══ HERO VSL ══ -->
+<section class="hero-vsl" aria-label="Apresentação">
+  <div class="hero-vsl-inner fade-up">
+    <span class="tag-label" style="justify-content:center;">Saúde Feminina &amp; Longevidade</span>
+    <h1 class="hero-vsl-title">
+      Descubra como tratar os sintomas da menopausa com <em>segurança</em> e voltar a ter qualidade de vida
+    </h1>
+    <p class="hero-vsl-sub">
+      Assista ao vídeo abaixo e entenda como funciona o tratamento personalizado para o seu caso
+    </p>
+
+    <!-- Lazy-load video player -->
+    <div class="vsl-player" id="vsl-player" data-videoid="VhtroUxh2dg" role="button" tabindex="0" aria-label="Assistir vídeo da Dra. Bruna Ghetti">
+      <img
+        class="vsl-thumb"
+        src="https://i.ytimg.com/vi/VhtroUxh2dg/maxresdefault.jpg"
+        alt="Assista ao vídeo da Dra. Bruna Ghetti sobre o Plano Safira"
+        width="1280" height="720"
+        loading="eager"
+        fetchpriority="high"
+        onerror="this.src='https://i.ytimg.com/vi/VhtroUxh2dg/hqdefault.jpg'"
+      >
+      <button class="vsl-play-btn" aria-label="Reproduzir vídeo">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="40" cy="40" r="40" fill="rgba(0,0,0,0.55)"/>
+          <polygon points="32,22 62,40 32,58" fill="white"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="hero-vsl-cta">
+      <a href="https://api.whatsapp.com/send?phone=556599989332&text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20Safira" target="_blank" rel="noopener noreferrer" class="btn-primary btn-vsl-cta" aria-label="Agendar consulta com a Dra. Bruna Ghetti">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Quero agendar minha consulta agora
+      </a>
+      <p class="vsl-cta-hint">Atendimento personalizado · Cuiabá – MT</p>
+    </div>
+
+    <div class="hero-stats" style="justify-content:center; padding-top:28px; border-top:1px solid rgba(184,154,114,.22); margin-top:4px;">
+      <div><span class="stat-num">+500</span><span class="stat-label">Pacientes</span></div>
+      <div><span class="stat-num">CRM</span><span class="stat-label">5755</span></div>
+      <div><span class="stat-num">RQE</span><span class="stat-label">2632</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DOR ══ -->
+<section class="pain" aria-label="Identificação da dor">
+  <div class="pain-quote-col fade-up">
+    <blockquote class="pain-quote">
+      "Dra, eu já não me reconheço mais no meu próprio corpo."
+      <cite>— Uma das frases mais sinceras que escuto no consultório</cite>
+    </blockquote>
+  </div>
+  <div class="pain-content-col fade-up">
+    <p>Mulheres que sempre cuidaram de si… mas que, em determinado momento, percebem que <strong>algo mudou.</strong></p>
+    <p>É como se a orquestra interna estivesse desalinhada. O corpo já não responde da mesma forma. E surge uma sensação silenciosa de <strong>perda de controle.</strong></p>
+    <p>E não… isso não é falta de cuidado. É o seu corpo atravessando uma mudança hormonal profunda.</p>
+    <ul class="symptoms" aria-label="Sintomas comuns da menopausa">
+      <li class="symptom">Cansaço frequente</li>
+      <li class="symptom">Alterações no peso</li>
+      <li class="symptom">Oscilações de humor</li>
+      <li class="symptom">Queda da libido</li>
+      <li class="symptom">Dificuldade para dormir</li>
+      <li class="symptom">Desconfortos íntimos</li>
+      <li class="symptom">Metabolismo lento</li>
+      <li class="symptom">Sensação de inchaço</li>
+    </ul>
+    <div class="pain-cta">
+      <a href="https://api.whatsapp.com/send?phone=556599989332&text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20Safira" target="_blank" rel="noopener noreferrer" class="btn-primary">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Quero entender meu tratamento
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PERSPECTIVA ══ -->
+<section class="perspectiva">
+  <div class="perspectiva-inner">
+    <div class="fade-up">
+      <div class="persp-img-frame">
+        <img
+          src="images/profile.webp"
+          alt="Dra. Bruna Ghetti em perfil, postura contemplativa"
+          width="1335" height="2000"
+          loading="lazy"
+        >
+      </div>
+    </div>
+    <div class="persp-content fade-up">
+      <span class="tag-label">Uma nova perspectiva</span>
+      <h2>A menopausa não precisa ser vivida com <em>frustração</em></h2>
+      <p>Ela impacta sua energia, sua autoestima e sua forma de se reconhecer. E quando o cuidado é superficial, os resultados também são.</p>
+      <p>Foi por isso que desenvolvi um plano de tratamento voltado <strong>exclusivamente para essa fase da mulher</strong> — um cuidado que integra ciência, escuta e personalização.</p>
+      <p>Esses sinais não são algo que você precisa simplesmente aceitar. São um chamado para um <strong>novo tipo de cuidado.</strong></p>
+      <div class="persp-cta">
+        <a href="https://api.whatsapp.com/send?phone=556599989332&text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20Safira" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Conhecer meu tratamento
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PLANO SAFIRA ══ -->
+<section class="safira" id="plano" aria-label="Plano Safira">
+  <div class="safira-inner">
+    <div class="fade-up">
+      <div class="safira-badge">Programa Premium</div>
+      <h2 class="safira-title">Plano <em>Safira</em><br>Transformação Feminina</h2>
+      <p class="safira-desc">Um programa de cuidado integral para mulheres que desejam atravessar a menopausa com saúde, segurança e protagonismo.</p>
+      <div class="safira-ctas">
+        <a href="https://api.whatsapp.com/send?phone=556599989332&text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20Safira" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Quero conhecer o Plano Safira
+        </a>
+      </div>
+    </div>
+    <ol class="features fade-up" aria-label="Etapas do Plano Safira">
+      <li class="feature-item">
+        <span class="feature-num" aria-hidden="true">01</span>
+        <div><div class="feature-title">Avaliação completa</div><p class="feature-text">Exames detalhados com metas individualizadas para o seu corpo e estilo de vida.</p></div>
+      </li>
+      <li class="feature-item">
+        <span class="feature-num" aria-hidden="true">02</span>
+        <div><div class="feature-title">Equilíbrio hormonal personalizado</div><p class="feature-text">Protocolo hormonal desenvolvido exclusivamente para a sua fisiologia.</p></div>
+      </li>
+      <li class="feature-item">
+        <span class="feature-num" aria-hidden="true">03</span>
+        <div><div class="feature-title">Estratégia nutricional</div><p class="feature-text">Adaptada ao seu metabolismo, rotina e necessidades específicas.</p></div>
+      </li>
+      <li class="feature-item">
+        <span class="feature-num" aria-hidden="true">04</span>
+        <div><div class="feature-title">Acompanhamento multidisciplinar</div><p class="feature-text">Terapias, suplementação direcionada e monitoramento contínuo.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ══ BENEFÍCIOS ══ -->
+<section aria-label="Benefícios do Plano Safira">
+  <div class="beneficios-inner">
+    <div class="section-header fade-up">
+      <span class="tag-label" style="justify-content:center;">O que você pode esperar</span>
+      <h2 class="section-title">Com o Plano Safira,<br>você <em>recupera</em> muito mais</h2>
+      <p class="section-sub">Quando o cuidado é certo, o que você recupera vai muito além do corpo.</p>
+    </div>
+    <div class="benefits-grid">
+      <article class="benefit-card fade-up"><span class="benefit-icon" aria-hidden="true">✦ ✦ ✦</span><h3 class="benefit-name">Energia &amp; Disposição</h3><p class="benefit-desc">Recupere o ânimo para viver tudo que você ama, sem aquele cansaço constante.</p></article>
+      <article class="benefit-card fade-up"><span class="benefit-icon" aria-hidden="true">✦ ✦ ✦</span><h3 class="benefit-name">Equilíbrio Emocional</h3><p class="benefit-desc">Oscilações de humor mais estáveis, noites de sono reparadoras e bem-estar renovado.</p></article>
+      <article class="benefit-card fade-up"><span class="benefit-icon" aria-hidden="true">✦ ✦ ✦</span><h3 class="benefit-name">Vida Íntima</h3><p class="benefit-desc">Melhora da libido e dos desconfortos íntimos — de volta ao prazer e à autoestima.</p></article>
+      <article class="benefit-card fade-up"><span class="benefit-icon" aria-hidden="true">✦ ✦ ✦</span><h3 class="benefit-name">Metabolismo Regulado</h3><p class="benefit-desc">Redução do inchaço e maior controle do peso com protocolo adaptado ao seu corpo.</p></article>
+      <article class="benefit-card fade-up"><span class="benefit-icon" aria-hidden="true">✦ ✦ ✦</span><h3 class="benefit-name">Sem Ondas de Calor</h3><p class="benefit-desc">Redução dos fogachos e desconfortos noturnos que roubam sua qualidade de vida.</p></article>
+      <article class="benefit-card fade-up"><span class="benefit-icon" aria-hidden="true">✦ ✦ ✦</span><h3 class="benefit-name">Autoestima Renovada</h3><p class="benefit-desc">Voltar a se reconhecer e a se sentir bem consigo mesma — a transformação mais profunda.</p></article>
+    </div>
+    <div class="beneficios-cta fade-up">
+      <a href="https://api.whatsapp.com/send?phone=556599989332&text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20Safira" target="_blank" rel="noopener noreferrer" class="btn-primary">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Quero esses resultados
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SOBRE ══ -->
+<section class="sobre" id="sobre" aria-label="Sobre a Dra. Bruna Ghetti">
+  <div class="sobre-inner">
+    <div class="sobre-content fade-up">
+      <span class="tag-label">Sobre a profissional</span>
+      <h2>Cuidado com<br><em>propósito e ciência</em></h2>
+      <p>Sou a Dra. Bruna Ghetti, ginecologista especialista em menopausa, saúde íntima e longevidade feminina.</p>
+      <p>Atuo com uma abordagem multidisciplinar que une ciência, escuta profunda e personalização real — porque cada mulher é única e merece um cuidado à altura da sua história.</p>
+      <p>Meu propósito é ajudar mulheres a viverem com mais energia, autoestima e qualidade de vida — em cada fase.</p>
+      <ul class="credentials" aria-label="Credenciais">
+        <li class="cred-item">Referência em Cuiabá em tratamentos integrativos de equilíbrio hormonal</li>
+        <li class="cred-item">Especialista em saúde íntima e longevidade feminina</li>
+        <li class="cred-item">Abordagem multidisciplinar com protocolos personalizados</li>
+        <li class="cred-item">CRM 5755 · RQE 2632</li>
+      </ul>
+      <div class="sobre-ctas">
+        <a href="https://api.whatsapp.com/send?phone=556599989332&text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20Safira" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Agendar minha consulta
+        </a>
+      </div>
+    </div>
+    <div class="sobre-image-wrap fade-up">
+      <div class="sobre-img-frame">
+        <img
+          src="images/sobre.webp"
+          alt="Dra. Bruna Ghetti em close, expressão serena e acolhedora"
+          width="1335" height="2000"
+          loading="lazy"
+        >
+      </div>
+      <div class="sobre-circle" aria-hidden="true"></div>
+      <div class="sobre-tag" aria-hidden="true">
+        <span class="sobre-tag-name">Dra. Bruna Ghetti</span>
+        <span class="sobre-tag-role">Ginecologista · Especialista</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DEPOIMENTOS ══ -->
+<section id="depoimentos" aria-label="Depoimentos de pacientes">
+  <div class="depo-inner">
+    <div class="section-header fade-up">
+      <span class="tag-label" style="justify-content:center;">Resultados reais</span>
+      <h2 class="section-title">O que as pacientes<br><em>dizem</em></h2>
+    </div>
+    <div class="depo-grid">
+      <article class="depo-card fade-up">
+        <div class="depo-stars" aria-label="5 estrelas">★★★★★</div>
+        <blockquote class="depo-text">"Eu achei que precisava aceitar o cansaço como parte do envelhecer. Depois do tratamento, tenho energia de novo para viver a vida que quero."</blockquote>
+        <cite class="depo-name">Maria Helena, 52 anos</cite>
+      </article>
+      <article class="depo-card fade-up">
+        <div class="depo-stars" aria-label="5 estrelas">★★★★★</div>
+        <blockquote class="depo-text">"Minha vida íntima mudou completamente. Voltei a me sentir eu mesma — com leveza, prazer e uma autoestima que eu pensava ter perdido."</blockquote>
+        <cite class="depo-name">Cláudia R., 48 anos</cite>
+      </article>
+      <article class="depo-card fade-up">
+        <div class="depo-stars" aria-label="5 estrelas">★★★★★</div>
+        <blockquote class="depo-text">"Não foi só sobre tratar sintomas. Foi sobre voltar a viver bem. A Dra. Bruna me escutou de verdade e criou um plano feito para mim."</blockquote>
+        <cite class="depo-name">Fernanda A., 55 anos</cite>
+      </article>
+    </div>
+    <div class="depo-cta fade-up">
+      <a href="https://api.whatsapp.com/send?phone=556599989332&text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20Safira" target="_blank" rel="noopener noreferrer" class="btn-primary">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Quero ser a próxima história
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section class="cta-section" aria-label="Chamada para agendamento">
+  <div class="cta-bg" role="presentation"></div>
+  <div class="cta-overlay" role="presentation"></div>
+  <div class="cta-content fade-up">
+    <p class="cta-tag">Um novo capítulo começa aqui</p>
+    <h2 class="cta-title">Você não precisa<br>atravessar essa fase <em>sozinha</em></h2>
+    <p class="cta-text">Com o cuidado certo, a menopausa pode ser vivida com mais equilíbrio, energia e qualidade de vida.</p>
+    <div class="cta-btns">
+      <a href="https://api.whatsapp.com/send?phone=556599989332&text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20Safira" target="_blank" rel="noopener noreferrer" class="btn-primary">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Agendar minha consulta
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section class="faq-section" aria-label="Perguntas frequentes">
+  <div class="faq-inner">
+    <div class="fade-up">
+      <span class="tag-label">Dúvidas frequentes</span>
+      <h2 class="section-title" style="text-align:left;margin:16px 0 0;">Perguntas<br><em>frequentes</em></h2>
+    </div>
+    <div class="faq-list" role="list">
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">A reposição hormonal é obrigatória?<span class="faq-arrow" aria-hidden="true">›</span></button>
+        <div class="faq-a">Não. Cada tratamento é individualizado. A indicação é avaliada caso a caso, com base nos seus exames, sintomas e histórico de saúde.</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Em quanto tempo começo a ver resultados?<span class="faq-arrow" aria-hidden="true">›</span></button>
+        <div class="faq-a">Os primeiros sinais de melhora geralmente surgem nas primeiras semanas. O acompanhamento contínuo garante que o protocolo seja ajustado para otimizar os resultados.</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">O Plano Safira é só para quem está na menopausa?<span class="faq-arrow" aria-hidden="true">›</span></button>
+        <div class="faq-a">Não. O plano também atende mulheres no climatério. Quanto antes o cuidado começa, mais tranquila tende a ser a transição.</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Preciso mudar completamente minha rotina?<span class="faq-arrow" aria-hidden="true">›</span></button>
+        <div class="faq-a">Não. O tratamento é adaptado à sua realidade. O objetivo é criar um plano sustentável que faça sentido para o seu dia a dia.</div>
+      </div>
+    </div>
+    <div class="faq-cta fade-up">
+      <a href="https://api.whatsapp.com/send?phone=556599989332&text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20Safira" target="_blank" rel="noopener noreferrer" class="btn-primary">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Ainda tem dúvidas? Fale conosco
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ LOCALIZAÇÃO ══ -->
+<section class="local" id="localizacao" aria-label="Localização do consultório">
+  <div class="local-inner">
+    <div class="fade-up">
+      <span class="tag-label">Onde estamos</span>
+      <h2 class="local-title">Cuiabá,<br><em>Mato Grosso</em></h2>
+      <address class="local-info">
+        <div class="local-row"><span class="local-icon" aria-hidden="true">📍</span><span>Av. Egito, 10-120 – Santa Rosa<br>Cuiabá – MT</span></div>
+        <div class="local-row"><span class="local-icon" aria-hidden="true">🕐</span><span>Segunda à Sexta: 07h30 às 19h<br>Sábado: 08h às 12h</span></div>
+        <div class="local-row"><span class="local-icon" aria-hidden="true">📋</span><span>CRM 5755 · RQE 2632</span></div>
+      </address>
+      <div class="local-ctas">
+        <a href="https://api.whatsapp.com/send?phone=556599989332&text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20Safira" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Agendar pelo WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="local-map fade-up">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.5!2d-56.0977!3d-15.5989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db1b9a0f67051%3A0x1a6c3c35a2e4c4b6!2sAv.+Egito%2C+Cuiab%C3%A1+-+MT!5e0!3m2!1spt-BR!2sbr!4v1"
+        title="Localização do consultório da Dra. Bruna Ghetti"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ══ INSTAGRAM STRIP ══ -->
+<div class="ig-strip">
+  <p class="ig-strip-text">Acompanhe no Instagram: <span>@brunaghetti</span></p>
+  <a href="https://www.instagram.com/brunaghetti/?hl=en" target="_blank" rel="noopener noreferrer" class="ig-btn" aria-label="Seguir Dra. Bruna Ghetti no Instagram">
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    Seguir @brunaghetti
+  </a>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <a href="/" class="footer-logo">Dra. Bruna Ghetti</a>
+  <p class="footer-info">CRM 5755 · RQE 2632 · Cuiabá – MT</p>
+</footer>
+
+<!-- ══ FLOATING WA ══ -->
+<a href="https://api.whatsapp.com/send?phone=556599989332&text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20conhecer%20o%20plano%20Safira" target="_blank" rel="noopener noreferrer" class="float-wa" aria-label="Falar pelo WhatsApp">
+  <div class="float-wa-pulse" aria-hidden="true"></div>
+  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="script.js" defer></script>
+</body>
+</html>
