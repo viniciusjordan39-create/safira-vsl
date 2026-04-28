@@ -72,6 +72,8 @@ nav {
 .btn-primary:hover { background: var(--deep); transform: translateY(-2px); }
 .btn-primary svg { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
 
+
+
 .btn-ghost {
   display: inline-flex; align-items: center; gap: 9px;
   border: 1px solid rgba(250,247,242,.4); color: rgba(250,247,242,.85);
@@ -651,4 +653,13 @@ footer {
   .hero-vsl { padding-top: 100px; }
   .hero-vsl-inner { gap: 22px; }
   .vsl-play-btn { width: 64px; height: 64px; }
+}
+
+@media (max-width: 600px) {
+  .hero-vsl-cta .btn-primary,
+  .hero-vsl-cta .btn-vsl-cta {
+    width: fit-content;
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
